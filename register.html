@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+<body>
+    <main class="main-container">
+        <img src="profile.jpg" alt="Profile" class="profile-small">
+        <h2 class="section-title">Create Account</h2>
+        
+        <div class="info-card">
+            <form class="contact-form" id="registerForm">
+                <div class="form-group">
+                    <label for="reg-username">Username</label>
+                    <input type="text" id="reg-username" placeholder="Choose a username" required>
+                </div>
+
+                <div class="form-group" style="margin-top: 15px;">
+                    <label for="reg-email">Email Address</label>
+                    <input type="email" id="reg-email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group" style="margin-top: 15px;">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" placeholder="Create a password" required>
+                </div>
+                
+                <button type="submit" class="btn-primary" style="margin-top: 25px;">Register</button>
+            </form>
+            <p style="margin-top: 20px; font-size: 0.9rem;">
+                Already have an account? <a href="login.html" style="color: var(--accent-blue); font-weight: 600;">Login here</a>
+            </p>
+        </div>
+
+        <div class="home-nav-buttons">
+            <a href="index.html" class="btn-primary btn-outline">Back to Home</a>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Register Successfully!');
+            window.location.href = 'login.html'; // I-redirect sa login page para makapag-sign in
+        });
+    </script>
+</body>
+</html>
