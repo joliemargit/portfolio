@@ -1,52 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  <!-- Shared CSS para sa navbar + page-specific CSS -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Me</title>
 </head>
 <body>
-
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">MY <span>Contact</span></div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      
-      <div class="contact-info">
-        <p>Email: joliemarrivera@gmail.com</p>
-        <p>Phone: +63 910 098 5789</p>
-      </div>
-
-      <form class="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
-
+    <main class="main-container">
+        <img src="profile.jpg" alt="Profile" class="profile-small">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="info-card">
+            <p>May tanong ka ba? Mag-email sa: <strong>joliemarrivera@gmail.com</strong></p>
+            <form class="contact-form" style="margin-top: 20px;">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+        <a href="index.html" class="btn-primary btn-outline">Back to Home</a>
+    </main>
 </body>
 </html>
