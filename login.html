@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <main class="main-container">
+        <img src="profile.jpg" alt="Profile" class="profile-small">
+        <h2 class="section-title">User Login</h2>
+        
+        <div class="info-card">
+            <form class="contact-form" id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                
+                <div class="form-group" style="margin-top: 15px;">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                
+                <button type="submit" class="btn-primary" style="margin-top: 25px;">Login</button>
+            </form>
+            <p style="margin-top: 20px; font-size: 0.9rem;">
+                Don't have an account? <a href="register.html" style="color: var(--accent-blue); font-weight: 600;">Register here</a>
+            </p>
+        </div>
+
+        <div class="home-nav-buttons">
+            <a href="index.html" class="btn-primary btn-outline">Back to Home</a>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Login Successfully!');
+            window.location.href = 'index.html'; // I-redirect sa home pagkatapos
+        });
+    </script>
+</body>
+</html>
